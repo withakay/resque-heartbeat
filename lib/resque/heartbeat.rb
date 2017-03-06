@@ -78,6 +78,11 @@ module Resque
         nil
       end
 
+      def kill
+        stop
+      end
+
+
       def redis
         Resque.redis
       end
